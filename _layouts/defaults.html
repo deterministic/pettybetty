@@ -36,6 +36,10 @@
     <![endif]-->
 
     <style>
+      .backvid {
+        display: none;
+      }
+
       video {
         width: 100%;
         height: auto;
@@ -79,23 +83,20 @@
 
     <main class="container">
       <article>
-        <iframe
-          width="100%"
-          height="1080"
-          src="https://www.youtube.com/embed/B7-6ydPDpow"
-          title="Set 14 Petty Betty 2 Hot Pepper Jam Whiskey River 031424 ProAudio4"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </article>
-      <!-- <article>
-        <video id="vid" controls autoplay muted>
-          <source src="video/SexyMan.webm" type="video/webm" />
+        <video
+          id="vid"
+          class="backvid"
+          controls="controls"
+          controls
+          preload="auto"
+          autoplay="autoplay"
+          loop
+          muted
+        >
           <source src="video/SexyMan.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </article> -->
+      </article>
       <div class="container">
         <header>
           <h2 class="section-title">Upcoming events</h2>
@@ -217,5 +218,12 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".backvid").show();
+        document.getElementById("vid").play();
+      });
+    </script>
   </body>
 </html>
