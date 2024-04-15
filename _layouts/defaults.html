@@ -36,6 +36,11 @@
     <![endif]-->
 
     <style>
+      .video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+      }
+
       .backvid {
         display: none;
       }
@@ -48,25 +53,37 @@
       img {
         border-radius: 10%;
         width: 100%;
+        height: auto;
       }
     </style>
   </head>
 
   <body class="pico-background-slate-950">
     <header class="container">
+      <nav>
+        <ul>
+          <li><strong></strong></li>
+        </ul>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/bios.html">Bios</a></li>
+        </ul>
+      </nav>
       <nav class="main-navigation">
         <!-- <button type="button" class="toggle-menu">
           <i class="fa fa-bars"></i>
         </button> -->
         <ul>
           <li>
-            <img src="images/PB2.jpg" />
-            <blockquote>
-              “Make it funky on the 1... Wait on 2.”
-              <footer>
-                <cite>James Brown</cite>
-              </footer>
-            </blockquote>
+            <div class="grid">
+              <img src="images/PB2.jpg" />
+              <blockquote>
+                “Make it funky on the 1... Wait on 2.”
+                <footer>
+                  <cite>James Brown</cite>
+                </footer>
+              </blockquote>
+            </div>
           </li>
         </ul>
         <!-- <ul>
@@ -81,123 +98,13 @@
       <div class="mobile-menu"></div>
     </header>
 
-    <main class="container">
-      <article>
-        <video
-          id="vid"
-          class="backvid"
-          controls="true"
-          controls
-          preload="auto"
-          autoplay="autoplay"
-          loop
-          muted
-        >
-          <source src="video/SexyMan.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </article>
-      <div class="container">
-        <header>
-          <h2 class="section-title">Upcoming events</h2>
-
-          <div class="event-nav">
-            <a class="prev" id="event-prev" href="#"
-              ><i class="fa fa-caret-left"></i
-            ></a>
-            <a class="next" id="event-next" href="#"
-              ><i class="fa fa-caret-right"></i
-            ></a>
-          </div>
-          <!-- .event-nav -->
-        </header>
-        <!-- .section-header -->
-        <div class="event-carousel">
-          <div class="event">
-            <div class="entry-date">
-              <div class="date">23</div>
-              <span class="month">Jun</span>
-            </div>
-            <h2 class="entry-title">
-              <a href="#">Sed et persipiatis unde omnis iste natus</a>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              temporibus quos aspernatur
-            </p>
-          </div>
-          <!-- .event -->
-
-          <div class="event">
-            <div class="entry-date">
-              <div class="date">23</div>
-              <span class="month">Jun</span>
-            </div>
-            <h2 class="entry-title">
-              <a href="#">Sed et persipiatis unde omnis iste natus</a>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              temporibus quos aspernatur
-            </p>
-          </div>
-          <!-- .event -->
-
-          <div class="event">
-            <div class="entry-date">
-              <div class="date">23</div>
-              <span class="month">Jun</span>
-            </div>
-            <h2 class="entry-title">
-              <a href="#">Sed et persipiatis unde omnis iste natus</a>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              temporibus quos aspernatur
-            </p>
-          </div>
-          <!-- .event -->
-
-          <div class="event">
-            <div class="entry-date">
-              <div class="date">23</div>
-              <span class="month">Jun</span>
-            </div>
-            <h2 class="entry-title">
-              <a href="#">Sed et persipiatis unde omnis iste natus</a>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              temporibus quos aspernatur
-            </p>
-          </div>
-          <!-- .event -->
-
-          <div class="event">
-            <div class="entry-date">
-              <div class="date">23</div>
-              <span class="month">Jun</span>
-            </div>
-            <h2 class="entry-title">
-              <a href="#">Sed et persipiatis unde omnis iste natus</a>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-              temporibus quos aspernatur
-            </p>
-          </div>
-          <!-- .event -->
-        </div>
-        <!-- .event-carousel -->
-      </div>
-      <!-- .container -->
-    </main>
+    {{ content }}
 
     <footer class="site-footer">
       <div class="container">
         <address>
           <p>
-            Chicago, IL <br /><a href="tel:354543543">(312) 206 6450</a>
+            Chicago, IL <br /><a href="tel:3122066450">(312) 206 6450</a>
             <br />
             <a href="mailto:info@pettybetty.band">info@pettybetty.band</a>
           </p>
