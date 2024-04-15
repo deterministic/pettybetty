@@ -45,14 +45,8 @@
         display: none;
       }
 
-      video {
-        width: 100%;
-        height: auto;
-      }
-
       img {
-        border-radius: 10%;
-        width: 100%;
+        width: 25%;
         height: auto;
       }
     </style>
@@ -66,26 +60,30 @@
         </ul>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/catalog.html">Catalog</a></li>
           <li><a href="/bios.html">Bios</a></li>
         </ul>
       </nav>
       <nav class="main-navigation">
-        <!-- <button type="button" class="toggle-menu">
-          <i class="fa fa-bars"></i>
-        </button> -->
         <ul>
           <li>
             <div class="grid">
-              <img src="images/PB2.jpg" />
-              <blockquote>
-                “Make it funky on the 1... Wait on 2.”
-                <footer>
-                  <cite>James Brown</cite>
-                </footer>
-              </blockquote>
+              <img src="images/PB2.png" />
+              <div></div>
             </div>
           </li>
         </ul>
+        <div></div>
+        <!-- <div class="overflow-auto">
+          <table>
+            <blockquote>
+              “Make it funky on the 1... Wait on 2.”
+              <footer>
+                <cite>James Brown</cite>
+              </footer>
+            </blockquote>
+          </table>
+        </div> -->
         <!-- <ul>
           <li class="menu-item current-menu-item">
             <a href="index.html">Home</a>
@@ -95,7 +93,6 @@
       </nav>
 
       <!-- .main-navigation -->
-      <div class="mobile-menu"></div>
     </header>
 
     {{ content }}
